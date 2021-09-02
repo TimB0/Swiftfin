@@ -4,7 +4,7 @@
   * License, v2.0. If a copy of the MPL was not distributed with this
   * file, you can obtain one at https://mozilla.org/MPL/2.0/.
   *
-  * Copyright 2021 Aiden Vigue & Jellyfin Contributors
+  * Copyright 2021 Timothy Boland & Jellyfin Contributors
   */
 
 import XCTest
