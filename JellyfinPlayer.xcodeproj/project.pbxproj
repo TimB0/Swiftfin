@@ -176,6 +176,7 @@
 		53F8377D265FF67C00F456B3 /* VideoPlayerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F8377C265FF67C00F456B3 /* VideoPlayerSettingsView.swift */; };
 		53F866442687A45F00DCD1D7 /* PortraitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F866432687A45F00DCD1D7 /* PortraitItemView.swift */; };
 		53FF7F2A263CF3F500585C35 /* LatestMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF7F29263CF3F500585C35 /* LatestMediaView.swift */; };
+		5C817F2DBE2DDABDBF42E2DD /* Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E5D2115AFC18F2AFF32048 /* Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework */; };
 		62133890265F83A900A81A2A /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213388F265F83A900A81A2A /* LibraryListView.swift */; };
 		621338932660107500A81A2A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621338922660107500A81A2A /* StringExtensions.swift */; };
 		621338B32660A07800A81A2A /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621338B22660A07800A81A2A /* LazyView.swift */; };
@@ -298,6 +299,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000858EE432D9A762853EF94 /* Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		08E5D2115AFC18F2AFF32048 /* Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091B5A872683142E00D78B61 /* ServerDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerDiscovery.swift; sourceTree = "<group>"; };
 		091B5A882683142E00D78B61 /* UDPBroadCastConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPBroadCastConnection.swift; sourceTree = "<group>"; };
 		09389CC626819B4500AE350E /* VideoPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerModel.swift; sourceTree = "<group>"; };
@@ -311,6 +314,7 @@
 		3327908226E09FF30046BA15 /* JellyfinElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfinElements.swift; sourceTree = "<group>"; };
 		3773C07648173CE7FEC083D5 /* Pods-JellyfinPlayer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyfinPlayer iOS.debug.xcconfig"; path = "Target Support Files/Pods-JellyfinPlayer iOS/Pods-JellyfinPlayer iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3F905C1D3D3A0C9E13E7A0BC /* Pods_JellyfinPlayer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyfinPlayer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E52C9603C36862E4AE4645 /* Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		531069502684E7EE00CFFDBA /* InfoTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTabBarViewController.swift; sourceTree = "<group>"; };
 		531069512684E7EE00CFFDBA /* MediaInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaInfoView.swift; sourceTree = "<group>"; };
 		531069522684E7EE00CFFDBA /* SubtitlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitlesView.swift; sourceTree = "<group>"; };
@@ -476,6 +480,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C817F2DBE2DDABDBF42E2DD /* Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +969,7 @@
 				628B95232670CABD0091AF3B /* SwiftUI.framework */,
 				3F905C1D3D3A0C9E13E7A0BC /* Pods_JellyfinPlayer_iOS.framework */,
 				EBFE1F64394BCC2EFFF1610D /* Pods_JellyfinPlayer_tvOS.framework */,
+				08E5D2115AFC18F2AFF32048 /* Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1037,6 +1043,8 @@
 				BEEC50E7EFD4848C0E320941 /* Pods-JellyfinPlayer iOS.release.xcconfig */,
 				DE5004F745B19E28744A7DE7 /* Pods-JellyfinPlayer tvOS.debug.xcconfig */,
 				D79953919FED0C4DF72BA578 /* Pods-JellyfinPlayer tvOS.release.xcconfig */,
+				45E52C9603C36862E4AE4645 /* Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.debug.xcconfig */,
+				000858EE432D9A762853EF94 /* Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1058,9 +1066,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3327907726DEB9E20046BA15 /* Build configuration list for PBXNativeTarget "JellyfinPlayer iOSUITests" */;
 			buildPhases = (
+				A4DDC04BB8E78B22802C6394 /* [CP] Check Pods Manifest.lock */,
 				3327906C26DEB9E20046BA15 /* Sources */,
 				3327906D26DEB9E20046BA15 /* Frameworks */,
 				3327906E26DEB9E20046BA15 /* Resources */,
+				24BD9DEE49517AE22ABE4BDF /* [CP] Embed Pods Frameworks */,
+				1265AFD466C94AE685AFCBA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1326,6 +1337,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1265AFD466C94AE685AFCBA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24BD9DEE49517AE22ABE4BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6435C3C2E610FE34AD537AC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1380,6 +1425,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JellyfinPlayer iOS/Pods-JellyfinPlayer iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DDC04BB8E78B22802C6394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7370E1AA68C6CB254E46F2C /* [CP] Check Pods Manifest.lock */ = {
@@ -1761,6 +1828,7 @@
 /* Begin XCBuildConfiguration section */
 		3327907826DEB9E20046BA15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E52C9603C36862E4AE4645 /* Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B8E37X5PX;
@@ -1781,6 +1849,7 @@
 		};
 		3327907926DEB9E20046BA15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000858EE432D9A762853EF94 /* Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B8E37X5PX;

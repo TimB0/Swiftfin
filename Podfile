@@ -3,6 +3,9 @@ target 'JellyfinPlayer iOS' do
   use_frameworks!
   pod 'google-cast-sdk'
   pod 'MobileVLCKit'
+    target 'JellyfinPlayer iOSUITests' do
+      pod 'EyesXCUI'
+    end
 end
 target 'JellyfinPlayer tvOS' do
   platform :tvos, '14.0'
