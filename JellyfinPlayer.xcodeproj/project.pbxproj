@@ -15,6 +15,9 @@
 		09389CC726819B4600AE350E /* VideoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09389CC626819B4500AE350E /* VideoPlayerModel.swift */; };
 		09389CC826819B4600AE350E /* VideoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09389CC626819B4500AE350E /* VideoPlayerModel.swift */; };
 		0959A5FD2686D29800C7C9A9 /* VideoUpNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0959A5FC2686D29800C7C9A9 /* VideoUpNextView.swift */; };
+		3327907326DEB9E20046BA15 /* JellyfinPlayer_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3327907226DEB9E20046BA15 /* JellyfinPlayer_iOSUITests.swift */; };
+		3327907B26DF150E0046BA15 /* TestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3327907A26DF150E0046BA15 /* TestBase.swift */; };
+		3327907F26DFF0450046BA15 /* JellyfinPlayer_iOSUITests_BDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3327907E26DFF0450046BA15 /* JellyfinPlayer_iOSUITests_BDD.swift */; };
 		531069572684E7EE00CFFDBA /* InfoTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531069502684E7EE00CFFDBA /* InfoTabBarViewController.swift */; };
 		531069582684E7EE00CFFDBA /* MediaInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531069512684E7EE00CFFDBA /* MediaInfoView.swift */; };
 		531069592684E7EE00CFFDBA /* SubtitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531069522684E7EE00CFFDBA /* SubtitlesView.swift */; };
@@ -253,6 +256,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3327907526DEB9E20046BA15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5377CBE9263B596A003A4E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5377CBF0263B596A003A4E83;
+			remoteInfo = "JellyfinPlayer iOS";
+		};
 		628B952B2670CABE0091AF3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5377CBE9263B596A003A4E83 /* Project object */;
@@ -290,6 +300,11 @@
 		091B5A882683142E00D78B61 /* UDPBroadCastConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPBroadCastConnection.swift; sourceTree = "<group>"; };
 		09389CC626819B4500AE350E /* VideoPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerModel.swift; sourceTree = "<group>"; };
 		0959A5FC2686D29800C7C9A9 /* VideoUpNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUpNextView.swift; sourceTree = "<group>"; };
+		3327907026DEB9E20046BA15 /* JellyfinPlayer iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JellyfinPlayer iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3327907226DEB9E20046BA15 /* JellyfinPlayer_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfinPlayer_iOSUITests.swift; sourceTree = "<group>"; };
+		3327907426DEB9E20046BA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3327907A26DF150E0046BA15 /* TestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBase.swift; sourceTree = "<group>"; };
+		3327907E26DFF0450046BA15 /* JellyfinPlayer_iOSUITests_BDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfinPlayer_iOSUITests_BDD.swift; sourceTree = "<group>"; };
 		3773C07648173CE7FEC083D5 /* Pods-JellyfinPlayer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyfinPlayer iOS.debug.xcconfig"; path = "Target Support Files/Pods-JellyfinPlayer iOS/Pods-JellyfinPlayer iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3F905C1D3D3A0C9E13E7A0BC /* Pods_JellyfinPlayer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyfinPlayer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531069502684E7EE00CFFDBA /* InfoTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTabBarViewController.swift; sourceTree = "<group>"; };
@@ -453,6 +468,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3327906D26DEB9E20046BA15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5358705D2669D21600D05A09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +536,17 @@
 				091B5A882683142E00D78B61 /* UDPBroadCastConnection.swift */,
 			);
 			path = ServerLocator;
+			sourceTree = "<group>";
+		};
+		3327907126DEB9E20046BA15 /* JellyfinPlayer iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3327907226DEB9E20046BA15 /* JellyfinPlayer_iOSUITests.swift */,
+				3327907426DEB9E20046BA15 /* Info.plist */,
+				3327907A26DF150E0046BA15 /* TestBase.swift */,
+				3327907E26DFF0450046BA15 /* JellyfinPlayer_iOSUITests_BDD.swift */,
+			);
+			path = "JellyfinPlayer iOSUITests";
 			sourceTree = "<group>";
 		};
 		5310694F2684E7EE00CFFDBA /* VideoPlayer */ = {
@@ -681,6 +714,7 @@
 			isa = PBXGroup;
 			children = (
 				534D4FE126A7D7CC000A7A48 /* Translations */,
+				3327907126DEB9E20046BA15 /* JellyfinPlayer iOSUITests */,
 				53D5E3DB264B47EE00BADDC8 /* Frameworks */,
 				5377CBF3263B596A003A4E83 /* JellyfinPlayer */,
 				535870612669D21600D05A09 /* JellyfinPlayer tvOS */,
@@ -697,6 +731,7 @@
 				5377CBF1263B596A003A4E83 /* JellyfinPlayer iOS.app */,
 				535870602669D21600D05A09 /* JellyfinPlayer tvOS.app */,
 				628B95202670CABD0091AF3B /* WidgetExtension.appex */,
+				3327907026DEB9E20046BA15 /* JellyfinPlayer iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -981,6 +1016,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3327906F26DEB9E20046BA15 /* JellyfinPlayer iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3327907726DEB9E20046BA15 /* Build configuration list for PBXNativeTarget "JellyfinPlayer iOSUITests" */;
+			buildPhases = (
+				3327906C26DEB9E20046BA15 /* Sources */,
+				3327906D26DEB9E20046BA15 /* Frameworks */,
+				3327906E26DEB9E20046BA15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3327907626DEB9E20046BA15 /* PBXTargetDependency */,
+			);
+			name = "JellyfinPlayer iOSUITests";
+			productName = "JellyfinPlayer iOSUITests";
+			productReference = 3327907026DEB9E20046BA15 /* JellyfinPlayer iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		5358705F2669D21600D05A09 /* JellyfinPlayer tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 535870712669D21700D05A09 /* Build configuration list for PBXNativeTarget "JellyfinPlayer tvOS" */;
@@ -1083,6 +1136,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					3327906F26DEB9E20046BA15 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 5377CBF0263B596A003A4E83;
+					};
 					5358705F2669D21600D05A09 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -1137,11 +1194,19 @@
 				5377CBF0263B596A003A4E83 /* JellyfinPlayer iOS */,
 				5358705F2669D21600D05A09 /* JellyfinPlayer tvOS */,
 				628B951F2670CABD0091AF3B /* WidgetExtension */,
+				3327906F26DEB9E20046BA15 /* JellyfinPlayer iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3327906E26DEB9E20046BA15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5358705E2669D21600D05A09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1321,6 +1386,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3327906C26DEB9E20046BA15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3327907B26DF150E0046BA15 /* TestBase.swift in Sources */,
+				3327907F26DFF0450046BA15 /* JellyfinPlayer_iOSUITests_BDD.swift in Sources */,
+				3327907326DEB9E20046BA15 /* JellyfinPlayer_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5358705C2669D21600D05A09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1500,6 +1575,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3327907626DEB9E20046BA15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5377CBF0263B596A003A4E83 /* JellyfinPlayer iOS */;
+			targetProxy = 3327907526DEB9E20046BA15 /* PBXContainerItemProxy */;
+		};
 		628B952C2670CABE0091AF3B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 628B951F2670CABD0091AF3B /* WidgetExtension */;
@@ -1639,6 +1719,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3327907826DEB9E20046BA15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B8E37X5PX;
+				INFOPLIST_FILE = "JellyfinPlayer iOSUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.racecondition.JellyfinPlayer-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "JellyfinPlayer iOS";
+			};
+			name = Debug;
+		};
+		3327907926DEB9E20046BA15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B8E37X5PX;
+				INFOPLIST_FILE = "JellyfinPlayer iOSUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.racecondition.JellyfinPlayer-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "JellyfinPlayer iOS";
+			};
+			name = Release;
+		};
 		535870722669D21700D05A09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE5004F745B19E28744A7DE7 /* Pods-JellyfinPlayer tvOS.debug.xcconfig */;
@@ -1949,6 +2069,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3327907726DEB9E20046BA15 /* Build configuration list for PBXNativeTarget "JellyfinPlayer iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3327907826DEB9E20046BA15 /* Debug */,
+				3327907926DEB9E20046BA15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		535870712669D21700D05A09 /* Build configuration list for PBXNativeTarget "JellyfinPlayer tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
