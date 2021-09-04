@@ -3,7 +3,6 @@ osx_image: xcode12.5.1
 branches:
   only:
     - xcuitest_poc
-
 before_install:
   - gem install fastlane --no-ri --no-rdoc --no-document
 install: true

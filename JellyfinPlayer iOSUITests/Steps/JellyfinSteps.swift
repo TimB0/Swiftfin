@@ -51,7 +51,6 @@ extension TestBase {
             HomeScreen.settingsButton.element.tap()
             SettingsScreen.signOutButton.element.tap()
             ConnecToServerScreen.connectToServer.element.tap()
-            // app.navigationBars["Connect to Server"].staticTexts["Connect to Server"].tap()
         }
     }
 }
