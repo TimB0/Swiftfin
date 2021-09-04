@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode10.1
+osx_image: xcode12.5
 branches:
   only:
     - xcuitest_poc
@@ -7,4 +7,4 @@ before_install:
   - gem install fastlane --no-document
 install: true
 script:
-  - fastlane scan --scheme JellyfinPlayer --device "iPhone XR"
+  - fastlane scan --scheme JellyfinPlayer --device "iPhone 12 Pro Max"
