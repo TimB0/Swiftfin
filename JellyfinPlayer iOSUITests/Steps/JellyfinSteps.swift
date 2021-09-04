@@ -46,6 +46,10 @@ extension TestBase {
         }
     }
     
+    func thenIWillPlayAMovie() {
+        
+    }
+    
     func thenIWillLogOut() {
         XCTContext.runActivity(named: "Then I Will Log Out") { _ in
             HomeScreen.settingsButton.element.tap()
