@@ -20,6 +20,33 @@
         }
       },
       {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "6bde3b0063ba8e7537b43744948535ca7e9e0dad",
+          "version": "0.5.2"
+        }
+      },
+      {
+        "package": "CombineExt",
+        "repositoryURL": "https://github.com/acvigue/CombineExt",
+        "state": {
+          "branch": "main",
+          "revision": "f629c5b052d1cb5d03e10890deccc50e4c649e68",
+          "version": null
+        }
+      },
+      {
+        "package": "Defaults",
+        "repositoryURL": "https://github.com/acvigue/Defaults",
+        "state": {
+          "branch": "main",
+          "revision": "a4153b523ab3df9f5e3f70e9cfe9c54bed98c7e3",
+          "version": null
+        }
+      },
+      {
         "package": "Gifu",
         "repositoryURL": "https://github.com/kaishin/Gifu",
         "state": {
@@ -29,7 +56,7 @@
         }
       },
       {
-        "package": "jellyfin-sdk-swift",
+        "package": "JellyfinAPI",
         "repositoryURL": "https://github.com/jellyfin/jellyfin-sdk-swift",
         "state": {
           "branch": "main",
@@ -38,7 +65,7 @@
         }
       },
       {
-        "package": "keychain-swift",
+        "package": "KeychainSwift",
         "repositoryURL": "https://github.com/evgenyneu/keychain-swift",
         "state": {
           "branch": null,
@@ -74,21 +101,39 @@
         }
       },
       {
-        "package": "swift-protobuf",
-        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "package": "Puppy",
+        "repositoryURL": "https://github.com/sushichop/Puppy",
         "state": {
           "branch": null,
-          "revision": "1f62db409f2c9b0223a3f68567b4a01333aae778",
-          "version": "1.17.0"
+          "revision": "95ce04b0e778b8d7c351876bc98bbf68328dfc9b",
+          "version": "0.3.1"
         }
       },
       {
-        "package": "SwiftUI-Introspect",
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      },
+      {
+        "package": "Introspect",
         "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect",
         "state": {
           "branch": null,
           "revision": "2e09be8af614401bc9f87d40093ec19ce56ccaf2",
           "version": "0.1.3"
+        }
+      },
+      {
+        "package": "SwiftUIFocusGuide",
+        "repositoryURL": "https://github.com/rmnblm/SwiftUIFocusGuide",
+        "state": {
+          "branch": null,
+          "revision": "fb8eefaccb2954efedc19a5539241f370baa4a10",
+          "version": "0.1.0"
         }
       },
       {
@@ -98,6 +143,15 @@
           "branch": "master",
           "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
           "version": null
+        }
+      },
+      {
+        "package": "xctest-dynamic-overlay",
+        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
+        "state": {
+          "branch": null,
+          "revision": "50a70a9d3583fe228ce672e8923010c8df2deddd",
+          "version": "0.2.1"
         }
       }
     ]

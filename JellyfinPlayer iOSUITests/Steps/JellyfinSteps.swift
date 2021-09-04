@@ -9,6 +9,7 @@
 
 import Foundation
 import XCTest
+import EyesXCUI
 
 extension TestBase {
     func givenWhenAppIsReady() {
@@ -31,7 +32,7 @@ extension TestBase {
         }
     }
     
-    func thenIWillLogin(username: String)  {
+    func  thenIWillLogin(username: String)  {
         XCTContext.runActivity(named: "Then I Will Login") { _ in
             ConnecToServerScreen.loginText.element.tap()
             XCTAssertTrue(ConnecToServerScreen.loginText.element.exists)
