@@ -21,8 +21,17 @@ class TestBase: XCTestCase {
     }
 
     override func tearDownWithError() throws {
+        takeScreenshot()
         super.tearDown()
         app.terminate()
+    }
+    
+    func takeScreenshot() {
+        let fullScreenshot = XCUIScreen.main.screenshot()
+        let screenshot = XCTAttachment(screenshot: fullScreenshot)
+        screenshot.lifetime = .keepAlways
+        
+        add(screenshot)
     }
 
 //    func testLaunchPerformance() throws {

@@ -14,6 +14,118 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DD6DBFB0950D5ACA7BBB5F25E1C1A342"
+               BuildableName = "MobileVLCKit"
+               BlueprintName = "MobileVLCKit"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F18BE6E33A356D3FF55C61358764E69"
+               BuildableName = "google-cast-sdk"
+               BlueprintName = "google-cast-sdk"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0BAD53B4A3D10AF4C69C36853F976CD6"
+               BuildableName = "TVVLCKit"
+               BlueprintName = "TVVLCKit"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FE7EB7769BF4A342EB71839C84C3B9C9"
+               BuildableName = "EyesXCUI"
+               BlueprintName = "EyesXCUI"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "470FE31978DC918618A329D8B55C85FF"
+               BuildableName = "Protobuf.framework"
+               BlueprintName = "Protobuf"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0DC56CCC76A491685A64C01082391279"
+               BuildableName = "Pods_JellyfinPlayer_tvOS.framework"
+               BlueprintName = "Pods-JellyfinPlayer tvOS"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "07990A27AACFE6D7A1E573772E4B40F2"
+               BuildableName = "Pods_JellyfinPlayer_iOS_JellyfinPlayer_iOSUITests.framework"
+               BlueprintName = "Pods-JellyfinPlayer iOS-JellyfinPlayer iOSUITests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E58F3477EF61952392DDE136314AC04A"
+               BuildableName = "Pods_JellyfinPlayer_iOS.framework"
+               BlueprintName = "Pods-JellyfinPlayer iOS"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "5377CBF0263B596A003A4E83"
                BuildableName = "JellyfinPlayer iOS.app"
                BlueprintName = "JellyfinPlayer iOS"
@@ -37,6 +149,14 @@
                BlueprintName = "JellyfinPlayer iOSUITests"
                ReferencedContainer = "container:JellyfinPlayer.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "JellyfinPlayer_iOSUITests/testAllElementsOnConnecToServerScreen()">
+               </Test>
+               <Test
+                  Identifier = "JellyfinPlayer_iOSUITests/testEnterServerAddress()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
