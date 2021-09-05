@@ -9,7 +9,6 @@
 
 import Foundation
 import XCTest
-import EyesXCUI
 
 class BDDTest: TestBase {
     

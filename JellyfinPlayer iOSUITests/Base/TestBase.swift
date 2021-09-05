@@ -14,6 +14,14 @@ class TestBase: XCTestCase {
     
     var app = XCUIApplication()
     
+    func XCTAsyncAssert(_ element: XCUIElement) {
+        let isElementExist = element.waitForExistence(timeout: 10)
+        
+        if isElementExist {
+            XCTAssertTrue(element.exists)
+        }
+    }
+    
     override func setUpWithError() throws {
         super.setUp()
         continueAfterFailure = false

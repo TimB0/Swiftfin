@@ -14,7 +14,7 @@ import EyesXCUI
 extension TestBase {
     func givenWhenAppIsReady() {
         XCTContext.runActivity(named: "Given App is Ready") { _ in
-            XCTAssertTrue(ConnecToServerScreen.serverURL.element.exists)
+            XCTAsyncAssert(ConnecToServerScreen.serverURL.element)
         }
     }
     
@@ -47,7 +47,6 @@ extension TestBase {
     }
     
     func thenIWillPlayAMovie() {
-        
     }
     
     func thenIWillLogOut() {
