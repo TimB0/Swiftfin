@@ -3,7 +3,10 @@ osx_image: xcode12.5
 branches:
   only:
     - xcuitest_poc
+podfile: Podfile
 before_install:
+  - gem install cocoapods --pre
+  - pod install --repo-update
   - gem install fastlane --no-document
 install: true
 script:
