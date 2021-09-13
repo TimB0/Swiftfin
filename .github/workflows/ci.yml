@@ -51,5 +51,5 @@ jobs:
           key: ${{ runner.os }}-${{ matrix.scheme }}-deriveddata        
           
       - name: testing ... iPhone 12 Pro Max
-        run: xcodebuild build-for-testing -scheme JellyfinPlayer -workspace JellyfinPlayer.xcworkspace -destination 'platform=iOS Simulator,OS=14.5,name=iPhone 12 Pro Max' clean build test CODE_SIGN_IDENTITY="" CODE_SIGN_REQUIRED=NO
+        run: xcodebuild build-for-testing -scheme JellyfinPlayer -workspace JellyfinPlayer.xcworkspace -destination 'platform=iOS Simulator,OS=15.0,name=iPhone 12 Pro Max' clean build test CODE_SIGN_IDENTITY="" CODE_SIGN_REQUIRED=NO
         
