@@ -2,9 +2,9 @@ name: "Build 🔨"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ xcuitest_poc ]
   pull_request:
-    branches: [ main ]
+    branches: [ xcuitest_poc ]
 
 jobs:
   build:
@@ -48,11 +48,8 @@ jobs:
         uses: actions/cache@v2
         with:
           path: "~/Library/Developer/Xcode/DerivedData"
-          key: ${{ runner.os }}-${{ matrix.scheme }}-deriveddata
-      
-      - name: xcodebuild!
-        run: |
-          xcodebuild build -workspace "JellyfinPlayer.xcworkspace" \
-          -scheme "${{ matrix.scheme }}" \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO          
-      
+          key: ${{ runner.os }}-${{ matrix.scheme }}-deriveddata        
+          
+      - name: testing ... iPhone 12 Pro Max
+        run: xcodebuild build-for-testing -scheme JellyfinPlayer -workspace JellyfinPlayer.xcworkspace -destination 'platform=iOS Simulator,OS=14.5,name=iPhone 12 Pro Max' clean build test CODE_SIGN_IDENTITY="" CODE_SIGN_REQUIRED=NO
+        
