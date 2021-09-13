@@ -2,9 +2,9 @@ name: "Build 🔨"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ xcuitest_poc ]
   pull_request:
-    branches: [ main ]
+    branches: [ xcuitest_poc ]
 
 jobs:
   build:
