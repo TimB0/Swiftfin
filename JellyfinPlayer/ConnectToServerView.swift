@@ -22,9 +22,11 @@ struct ConnectToServerView: View {
                             TextField(NSLocalizedString("Username", comment: ""), text: $username)
                                 .disableAutocorrection(true)
                                 .autocapitalization(.none)
+                                .accessibility(identifier: "Username Field")
                             SecureField(NSLocalizedString("Password", comment: ""), text: $password)
                                 .disableAutocorrection(true)
                                 .autocapitalization(.none)
+                                .accessibility(identifier: "Secure Password Field")
                             Button {
                                 viewModel.login()
                             } label: {
@@ -36,6 +38,7 @@ struct ConnectToServerView: View {
                                     }
                                 }
                             }.disabled(viewModel.isLoading || username.isEmpty)
+                             .accessibility(identifier: "Login Button")
                         }
 
                         Section {
@@ -118,6 +121,7 @@ struct ConnectToServerView: View {
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
                             .keyboardType(.URL)
+                            .accessibility(identifier: "Server URL Field")
                         Button {
                             viewModel.connectToServer()
                         } label: {
@@ -130,6 +134,7 @@ struct ConnectToServerView: View {
                             }
                         }
                         .disabled(viewModel.isLoading || uri.isEmpty)
+                        .accessibility(identifier: "Connect Button")
                     }
 
                     Section(header: Text("Discovered Servers")) {
@@ -137,10 +142,10 @@ struct ConnectToServerView: View {
                             ProgressView()
                         }
                         ForEach(self.viewModel.servers, id: \.id) { server in
-                            Button(action: {
-                                viewModel.connectToServer(at: server.url)
-                            }, label: {
-                                HStack {
+                            Button(action:
+                                    {viewModel.connectToServer(at: server.url)
+                                    }, label: {
+                                        HStack {
                                     Text(server.name)
                                         .font(.headline)
                                     Text("• \(server.host)")
@@ -152,7 +157,7 @@ struct ConnectToServerView: View {
                                     }
                                 }
 
-                            })
+                            }).accessibility(identifier: "Discovered Servers Button")
                         }
                     }
                     .onAppear(perform: self.viewModel.discoverServers)

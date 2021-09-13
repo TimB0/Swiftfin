@@ -24,6 +24,7 @@ struct MainTabView: View {
                 Image(systemName: "house")
             }
             .tag(Tab.home)
+            .accessibility(identifier: "Home Button")
             NavigationView {
                 LibraryListView()
             }

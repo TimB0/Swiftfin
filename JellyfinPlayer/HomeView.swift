@@ -34,6 +34,7 @@ struct HomeView: View {
                                 Text("Latest \(library?.name ?? "")")
                                     .font(.title2)
                                     .fontWeight(.bold)
+                                    .accessibility(identifier: "Latest \(library?.name ?? "")")
                                 Spacer()
                                 NavigationLink(destination: LazyView {
                                     LibraryView(viewModel: .init(parentID: libraryID, filters: viewModel.recentFilterSet), title: library?.name ?? "")
@@ -63,7 +64,7 @@ struct HomeView: View {
                         showingSettings = true
                     } label: {
                         Image(systemName: "gear")
-                    }
+                    }.accessibility(identifier: "Settings Gear")
                 }
             }
             .fullScreenCover(isPresented: $showingSettings) {

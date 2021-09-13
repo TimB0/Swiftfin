@@ -33,6 +33,7 @@ struct SettingsView: View {
                         Spacer()
                         Text(SessionManager.current.user.username ?? "")
                             .foregroundColor(.jellyfinPurple)
+                            .accessibility(identifier: "Current User")
                     }
 
                     NavigationLink(
@@ -43,6 +44,7 @@ struct SettingsView: View {
                                 Spacer()
                                 Text(ServerEnvironment.current.server.name ?? "")
                                     .foregroundColor(.jellyfinPurple)
+                                    .accessibility(identifier: "Current Server")
                             }
                         })
 
@@ -56,32 +58,32 @@ struct SettingsView: View {
                     } label: {
                         Text("Sign out")
                             .font(.callout)
-                    }
+                    }.accessibility(identifier: "Sign Out Button")
                 }
                 Section(header: Text("Playback")) {
                     Picker("Default local quality", selection: $inNetworkStreamBitrate) {
                         ForEach(self.viewModel.bitrates, id: \.self) { bitrate in
-                            Text(bitrate.name).tag(bitrate.value)
+                            Text(bitrate.name).tag(bitrate.value).accessibility(identifier: bitrate.name)
                         }
-                    }
+                    }.accessibility(identifier: "Default local quality picker")
 
                     Picker("Default remote quality", selection: $outOfNetworkStreamBitrate) {
                         ForEach(self.viewModel.bitrates, id: \.self) { bitrate in
-                            Text(bitrate.name).tag(bitrate.value)
+                            Text(bitrate.name).tag(bitrate.value).accessibility(identifier: bitrate.name)
                         }
-                    }
+                    }.accessibility(identifier: "Default remote quality picker")
 
                     Picker("Jump Forward Length", selection: $jumpForwardLength) {
                         ForEach(self.viewModel.videoPlayerJumpLengths, id: \.self) { length in
-                            Text(length.label).tag(length.rawValue)
+                            Text(length.label).tag(length.rawValue).accessibility(identifier: length.label)
                         }
-                    }
+                    }.accessibility(identifier: "Jump Forward Length Picker")
 
                     Picker("Jump Backward Length", selection: $jumpBackwardLength) {
                         ForEach(self.viewModel.videoPlayerJumpLengths, id: \.self) { length in
-                            Text(length.label).tag(length.rawValue)
+                            Text(length.label).tag(length.rawValue).accessibility(identifier: length.label)
                         }
-                    }
+                    }.accessibility(identifier: "Jump Backward Length Picker")
                 }
 
                 Section(header: Text("Accessibility")) {
