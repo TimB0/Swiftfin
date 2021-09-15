@@ -13,7 +13,6 @@ jobs:
       matrix:
         scheme:
           - "JellyfinPlayer"
-          - "JellyfinPlayer tvOS"
           
     runs-on: macos-11
     
