@@ -26,12 +26,35 @@ class TestBase: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app.launch()
+        
+
+        
     }
 
     override func tearDownWithError() throws {
         takeScreenshot()
         super.tearDown()
-        app.terminate()
+        
+        if SettingsScreen.signOutButton.element.exists {
+            XCTAssertTrue(SettingsScreen.signOutButton.element.exists)
+            // TODO:  Need to investigate why we are not able to click on the Sign Out Button without waiting for 30 seconds
+            Thread.sleep(forTimeInterval: 30)
+            SettingsScreen.signOutButton.element.tap()
+            Thread.sleep(forTimeInterval: 5)
+            app.terminate()
+            return
+        }
+        
+        if HomeScreen.settingsButton.element.exists {
+            HomeScreen.settingsButton.element.tap()
+            XCTAssertTrue(SettingsScreen.signOutButton.element.exists)
+            // TODO:  Need to investigate why we are not able to click on the Sign Out Button without waiting for 30 seconds
+            Thread.sleep(forTimeInterval: 30)
+            SettingsScreen.signOutButton.element.tap()
+            Thread.sleep(forTimeInterval: 5)
+            app.terminate()
+            return
+        }
     }
     
     func takeScreenshot() {

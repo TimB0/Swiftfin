@@ -5,6 +5,7 @@ target 'JellyfinPlayer iOS' do
   pod 'MobileVLCKit'
     target 'JellyfinPlayer iOSUITests' do
       pod 'EyesXCUI'
+      pod 'iOSSnapshotTestCase'
     end
 end
 target 'JellyfinPlayer tvOS' do

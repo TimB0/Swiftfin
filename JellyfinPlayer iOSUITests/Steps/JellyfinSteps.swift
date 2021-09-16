@@ -46,13 +46,29 @@ extension TestBase {
         }
     }
     
-    func thenIWillPlayAMovie() {
+    func thenIWillPlayAMovie(videoLength: String) {
+        XCTAsyncAssert(HomeScreen.allMediaButton.element)
+        HomeScreen.allMediaButton.element.tap()
+        XCTAsyncAssert(HomeScreen.homeButton.element)
+        HomeScreen.homeButton.element.tap()
+//        XCTAsyncAssert(HomeScreen.sixPageScrollBar.element)
+//        HomeScreen.sixPageScrollBar.element.swipeLeft()
+//        XCTAsyncAssert(HomeScreen.ladyFrankenSteinHomeText.element)
+//        HomeScreen.ladyFrankenSteinHomeText.element.tap()
+//        XCUIApplication().buttons[videoLength].tap()
+        
+        
     }
     
     func thenIWillLogOut() {
         XCTContext.runActivity(named: "Then I Will Log Out") { _ in
             HomeScreen.settingsButton.element.tap()
+            XCTAssertTrue(SettingsScreen.signOutButton.element.exists)
+            /* TODO:  Need to find out why the Sign Out button doesnt work unless you
+            wait for 30 seconds before and 5 seconds after */
+            Thread.sleep(forTimeInterval: 30)
             SettingsScreen.signOutButton.element.tap()
+            Thread.sleep(forTimeInterval: 5)
             ConnecToServerScreen.connectToServer.element.tap()
         }
     }

@@ -22,25 +22,41 @@ enum SettingsScreen: String {
 }
 
 enum HomeScreen: String {
+    case homeButton = "Home"
+    case allMediaButton = "All Media"
     case settingsButton = "settings"
+    case ladyFrankenSteinLatestMoviesText = "Lady Frankenstein, 1971 • R"
+    case ladyFrankenSteinHomeText = "Lady Frankenstein"
+    case sixPageScrollBar = "Vertical scroll bar, 6 pages"
     
     var element: XCUIElement {
         switch self {
+        case .homeButton:
+            return XCUIApplication().buttons[self.rawValue]
+        case .allMediaButton:
+            return XCUIApplication().buttons[self.rawValue]
+        case .sixPageScrollBar:
+            return XCUIApplication().otherElements[self.rawValue]
         case .settingsButton:
+            return XCUIApplication().buttons[self.rawValue]
+        case .ladyFrankenSteinHomeText:
+            return XCUIApplication().buttons[self.rawValue]
+        case .ladyFrankenSteinLatestMoviesText:
             return XCUIApplication().buttons[self.rawValue]
         }
     }
 }
 
+
 enum ConnecToServerScreen: String {
-    case serverURL = "Server URL"
-    case username = "Username"
-    case connectButton = "Connect"
-    case loginButton = "Login"
+    case serverURL = "Server URL Field"
+    case username = "Username Field"
+    case connectButton = "Connect Button"
+    case loginButton = "Login Button"
     case signOutButton = "Sign out"
     case loginText = "LOGIN TO STABLE DEMO"
     case connectToServer = "Connect to Server"
-    case password = "Password"
+    case password = "Secure Password Field"
     
     var element: XCUIElement {
         switch self {

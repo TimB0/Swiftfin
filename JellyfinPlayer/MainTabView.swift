@@ -24,7 +24,8 @@ struct MainTabView: View {
                 Image(systemName: "house")
             }
             .tag(Tab.home)
-            .accessibility(identifier: "Home Button")
+            // TODO:  find out why this accessibilityIdentifier doesnt work
+            .accessibilityIdentifier("Home Tab")
             NavigationView {
                 LibraryListView()
             }
@@ -34,6 +35,8 @@ struct MainTabView: View {
                 Image(systemName: "folder")
             }
             .tag(Tab.allMedia)
+            // TODO:  find out why this accessibilityIdentifier doesnt work
+            .accessibilityIdentifier("All Media Tab")
         }
     }
 }

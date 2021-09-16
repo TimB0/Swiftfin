@@ -17,7 +17,7 @@ class BDDTest: TestBase {
         whenIEnterServerAddress(serverAddress: "https://demo.jellyfin.org/stable")
         whenIClickConnect()
         thenIWillLogin(username: "demo")
-        thenIWillPlayAMovie()
+        thenIWillPlayAMovie(videoLength: "17m")
         thenIWillLogOut()
     }
 }
