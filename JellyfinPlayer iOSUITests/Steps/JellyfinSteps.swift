@@ -62,6 +62,7 @@ extension TestBase {
     
     func thenIWillLogOut() {
         XCTContext.runActivity(named: "Then I Will Log Out") { _ in
+            XCTAssertTrue(HomeScreen.settingsButton.element.exists)
             HomeScreen.settingsButton.element.tap()
             XCTAssertTrue(SettingsScreen.signOutButton.element.exists)
             /* TODO:  Need to find out why the Sign Out button doesnt work unless you
