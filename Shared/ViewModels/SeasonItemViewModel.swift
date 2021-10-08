@@ -21,7 +21,7 @@ final class SeasonItemViewModel: ItemViewModel {
 
         requestEpisodes()
     }
-    
+
     override func playButtonText() -> String {
         guard let playButtonItem = playButtonItem else { return "Play" }
         guard let episodeLocator = playButtonItem.getEpisodeLocator() else { return "Play" }
@@ -39,20 +39,20 @@ final class SeasonItemViewModel: ItemViewModel {
             }, receiveValue: { [weak self] response in
                 self?.episodes = response.items ?? []
                 LogManager.shared.log.debug("Retrieved \(String(self?.episodes.count ?? 0)) episodes")
-                
+
                 self?.setNextUpInSeason()
             })
             .store(in: &cancellables)
     }
-    
+
     // Sets the play button item to the "Next up" in the season based upon
     //     the watched status of episodes in the season.
     // Default to the first episode of the season if all have been watched.
     private func setNextUpInSeason() {
         guard episodes.count > 0 else { return }
-        
+
         var firstUnwatchedSearch: BaseItemDto?
-        
+
         for episode in episodes {
             guard let played = episode.userData?.played else { continue }
             if !played {
@@ -60,7 +60,7 @@ final class SeasonItemViewModel: ItemViewModel {
                 break
             }
         }
-        
+
         if let firstUnwatched = firstUnwatchedSearch {
             playButtonItem = firstUnwatched
         } else {

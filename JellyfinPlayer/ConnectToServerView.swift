@@ -177,7 +177,7 @@ struct ConnectToServerView: View {
                   dismissButton: .cancel())
         }
         .navigationTitle(NSLocalizedString("Connect to Server", comment: ""))
-        .onAppear {            
+        .onAppear {
             AppURLHandler.shared.appURLState = .allowedInLogin
         }
     }

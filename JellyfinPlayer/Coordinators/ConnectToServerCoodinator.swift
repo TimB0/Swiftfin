@@ -15,7 +15,7 @@ final class ConnectToServerCoodinator: NavigationCoordinatable {
     let stack = NavigationStack(initial: \ConnectToServerCoodinator.start)
 
     @Root var start = makeStart
-    
+
     @ViewBuilder func makeStart() -> some View {
         ConnectToServerView()
     }
