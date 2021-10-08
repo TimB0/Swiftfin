@@ -7,13 +7,11 @@
 
 import Combine
 import JellyfinAPI
-import Stinsen
 import SwiftUI
 
 struct LibrarySearchView: View {
-    @EnvironmentObject var searchRouter: SearchCoordinator.Router
     @StateObject var viewModel: LibrarySearchViewModel
-    @State private var searchQuery = ""
+    @State var searchQuery = ""
 
     @State private var tracks: [GridItem] = Array(repeating: .init(.flexible()), count: Int(UIScreen.main.bounds.size.width) / 125)
 
@@ -40,7 +38,7 @@ struct LibrarySearchView: View {
         .onChange(of: searchQuery) { query in
             viewModel.searchQuerySubject.send(query)
         }
-        .navigationBarTitle("Search", displayMode: .inline)
+        .navigationBarTitle("Search")
     }
 
     var suggestionsListView: some View {
@@ -80,20 +78,13 @@ struct LibrarySearchView: View {
                     if !items.isEmpty {
                         LazyVGrid(columns: tracks) {
                             ForEach(items, id: \.id) { item in
-                                Button {
-                                    searchRouter.route(to: \.item, item)
-                                } label: {
-                                    PortraitItemView(item: item)
-                                }
+                                ItemView(item: item)
                             }
                         }
                         .padding(.bottom, 16)
                     }
                 }
             }
-        }
-        .onRotate { _ in
-            recalcTracks()
         }
     }
 
@@ -107,21 +98,6 @@ struct LibrarySearchView: View {
             return viewModel.showItems
         default:
             return []
-        }
-    }
-}
-
-private extension ItemType {
-    var localized: String {
-        switch self {
-        case .episode:
-            return "Episodes"
-        case .movie:
-            return "Movies"
-        case .series:
-            return "Shows"
-        default:
-            return ""
         }
     }
 }
