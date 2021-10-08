@@ -15,7 +15,7 @@ import Stinsen
 final class MainTabCoordinator: TabCoordinatable {
     var child = TabChild(startingItems: [
         \MainTabCoordinator.home,
-        \MainTabCoordinator.allMedia,
+        \MainTabCoordinator.allMedia
     ])
 
     @Route(tabItem: makeHomeTab) var home = makeHome
@@ -42,7 +42,7 @@ final class MainTabCoordinator: TabCoordinatable {
     @ViewBuilder func customize(_ view: AnyView) -> some View {
         view.onAppear {
             AppURLHandler.shared.appURLState = .allowed
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {                
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
                 AppURLHandler.shared.processLaunchedURLIfNeeded()
             }
         }

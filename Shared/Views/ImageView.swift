@@ -31,7 +31,7 @@ struct ImageView: View {
             ZStack {
                 Rectangle()
                    .foregroundColor(Color.systemFill)
-                
+
                 Text(failureInitials)
                     .font(.largeTitle)
                     .foregroundColor(.secondary)
